@@ -130,7 +130,11 @@ main table td {
 #calculator-section {
     margin-top: calc(2rem + 1vw);
     padding: calc(1.5rem + 0.5vw);
-    /* Fun fact, this beach is my hometown beach! */
+    /* Fun fact, this beach is my hometown beach! 
+
+    backround imaging:
+    https://www.w3schools.com/cssref/pr_background-image.php
+    */
     background-image: url('../download.jpg');
     background-size: cover;
     background-position: center;

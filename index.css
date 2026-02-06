@@ -39,7 +39,7 @@ nav {
     width: 30%;
     background-color: #34495e;
     padding: calc(1.5rem + 0.5vw);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 nav ul {
@@ -60,7 +60,6 @@ nav a {
     display: block;
     padding: 0.8rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -72,7 +71,6 @@ main {
     padding: calc(2rem + 1vw);
     text-align: center;
     background-color: #ecf0f1;
-    min-height: 100vh;
 }
 
 main img {
@@ -104,6 +102,94 @@ main li {
     margin: 0.75rem 0;
 }
 
+main table {
+    width: 100%;
+    max-width: 600px;
+    margin: calc(1.5rem + 0.5vw) auto;
+    border-collapse: collapse;
+    background-color: #d4a574;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main table th {
+    background-color: #c89660;
+    color: #000;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border: 2px solid #8b6f47;
+}
+
+main table td {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    color: #000;
+    border: 2px solid #8b6f47;
+}
+
+#calculator-section {
+    margin-top: calc(2rem + 1vw);
+    padding: calc(1.5rem + 0.5vw);
+    /* Fun fact, this beach is my hometown beach! */
+    background-image: url('../download.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+#calculator-section h3 {
+    font-family: 'Pacifico', cursive;
+    color: #FF6B6B;
+    font-size: calc(1.5rem + 0.5vw);
+    margin-bottom: calc(1rem + 0.5vw);
+    position: relative;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(0.8rem + 0.3vw);
+    max-width: 100%;
+    padding: calc(1rem + 0.5vw);
+}
+
+#calculator input {
+    width: 100%;
+    max-width: 350px;
+    padding: calc(0.6rem + 0.3vw);
+    font-size: calc(0.9rem + 0.3vw);
+    border: 3px solid #FFE66D;
+    border-radius: 8px;
+    background-color: #FFF9E6;
+    color: #2C5F6F;
+    font-weight: 500;
+}
+
+
+#calculator button {
+    padding: calc(0.7rem + 0.2vw) calc(1.2rem + 0.3vw);
+    font-size: calc(0.9rem + 0.2vw);
+    background:  #44A08D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+#calculator #output {
+    font-size: calc(1.3rem + 0.4vw);
+    font-weight: 700;
+    margin-top: calc(1rem + 0.3vw);
+    padding: calc(0.8rem + 0.3vw);
+    color: #2C5F6F;
+    background: #FFE66D;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
 footer {
     background-color: #2c3e50;
     color: white;
@@ -111,27 +197,16 @@ footer {
     text-align: center;
 }
 
-footer p {
-    font-size: calc(0.85rem + 0.2vw);
-}
 
 footer a {
     color: #3498db;
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
 @media screen and (max-width: 1000px) {
     main {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 750px) {
     header {
         text-align: center;
     }
@@ -142,8 +217,8 @@ footer a:hover {
     
     nav {
         width: 100%;
-        min-height: auto;
         padding: calc(1rem + 0.5vw);
+        height: auto;
     }
     
     nav ul {
@@ -163,5 +238,24 @@ footer a:hover {
     
     main {
         width: 100%;
+    }
+    
+    #calculator-section {
+        padding: calc(1rem + 0.3vw);
+        margin-top: calc(1rem + 0.5vw);
+    }
+    
+    #calculator {
+        padding: calc(0.8rem + 0.3vw);
+    }
+    
+    #calculator input,
+    #calculator #output,
+    #calculator-buttons {
+        max-width: 100%;
+    }
+    
+    #calculator button {
+        padding: calc(0.6rem + 0.1vw) calc(1rem + 0.2vw);
     }
 }
